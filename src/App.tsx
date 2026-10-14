@@ -18,10 +18,10 @@ function App() {
 
   return (
     <div data-theme={theme} className={dark ? "dark" : ""}>
-      <main className="min-h-screen bg-background p-10 text-foreground">
+      <main className="min-h-screen bg-background p-10 font-sans text-foreground">
         <div className="mx-auto flex max-w-3xl flex-col gap-10">
           <header className="flex items-center justify-between">
-            <h1 className="text-3xl font-bold tracking-tight">Gamers Guild DS</h1>
+            <h1 className="font-heading text-3xl font-bold tracking-tight">Gamers Guild DS</h1>
             <div className="flex gap-2">
               <select
                 value={theme}
@@ -38,7 +38,7 @@ function App() {
           </header>
 
           <section className="flex flex-col gap-3">
-            <h2 className="text-lg font-semibold">Button</h2>
+            <h2 className="font-heading text-lg font-semibold">Button</h2>
             <div className="flex flex-wrap gap-2">
               <Button>Default</Button>
               <Button variant="secondary">Secondary</Button>
@@ -57,7 +57,7 @@ function App() {
           </section>
 
           <section className="flex flex-col gap-3">
-            <h2 className="text-lg font-semibold">Badge</h2>
+            <h2 className="font-heading text-lg font-semibold">Badge</h2>
             <div className="flex flex-wrap gap-2">
               <Badge>Default</Badge>
               <Badge variant="secondary">Secondary</Badge>
@@ -67,7 +67,7 @@ function App() {
           </section>
 
           <section className="flex flex-col gap-3">
-            <h2 className="text-lg font-semibold">Card + Input + Label</h2>
+            <h2 className="font-heading text-lg font-semibold">Card + Input + Label</h2>
             <Card className="max-w-sm">
               <CardHeader>
                 <CardTitle>Entrar na guilda</CardTitle>

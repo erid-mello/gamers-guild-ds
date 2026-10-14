@@ -1,9 +1,11 @@
 /*
  * Tema: cliente-exemplo
- * Cópia do default para estudar a estrutura. Só --primary e --radius mudam,
+ * Cópia do default para estudar a estrutura. Só fontes, --primary e --radius mudam,
  * para dar para ver a troca de tema acontecendo.
  */
 [data-theme="cliente-exemplo"] {
+    --font-family-body: "Inter Variable", sans-serif;
+    --font-family-heading: "Space Grotesk Variable", sans-serif;
     --background: oklch(1 0 0);
     --foreground: oklch(0.145 0 0);
     --card: oklch(1 0 0);
