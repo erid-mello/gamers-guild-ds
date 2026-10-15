@@ -12,6 +12,9 @@ import {
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 
+const steps = [50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 950]
+const palettes = ["guild", "neutral", "blue", "red"]
+
 function App() {
   const [dark, setDark] = useState(true)
   const [theme, setTheme] = useState<"default" | "cliente-exemplo">("default")
@@ -36,6 +39,25 @@ function App() {
               </Button>
             </div>
           </header>
+
+          <section className="flex flex-col gap-3">
+            <h2 className="font-heading text-lg font-semibold">Primitivos de cor</h2>
+            {palettes.map((palette) => (
+              <div key={palette} className="flex items-center gap-3">
+                <span className="w-16 text-sm text-muted-foreground">{palette}</span>
+                <div className="flex flex-1 gap-1">
+                  {steps.map((step) => (
+                    <div
+                      key={step}
+                      title={`--color-${palette}-${step}`}
+                      className="h-8 flex-1 rounded-md"
+                      style={{ background: `var(--color-${palette}-${step})` }}
+                    />
+                  ))}
+                </div>
+              </div>
+            ))}
+          </section>
 
           <section className="flex flex-col gap-3">
             <h2 className="font-heading text-lg font-semibold">Button</h2>
