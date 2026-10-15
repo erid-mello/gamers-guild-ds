@@ -28,7 +28,7 @@
     --chart-3: var(--color-neutral-600);
     --chart-4: var(--color-neutral-700);
     --chart-5: var(--color-neutral-800);
-    --radius: 0.625rem;
+    --radius: 0.45rem;
     --sidebar: var(--color-neutral-50);
     --sidebar-foreground: var(--color-neutral-950);
     --sidebar-primary: var(--color-neutral-900);
