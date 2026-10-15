@@ -10,11 +10,11 @@
 @import "./styles/primitives/colors.css";
 
 /* Só para a página de teste (App.tsx): força as paletas do Tailwind exibidas nos swatches */
-@source inline("bg-{neutral,blue,red}-{50,{100..900..100},950}");
+@source inline("bg-{neutral,red}-{50,{100..900..100},950}");
 
 /* Temas: cada um só define valores de tokens */
 @import "./themes/default.css";
-@import "./themes/cliente-exemplo.css";
+@import "./themes/gamers-guild.css";
 
 @custom-variant dark (&:is(.dark *));
 

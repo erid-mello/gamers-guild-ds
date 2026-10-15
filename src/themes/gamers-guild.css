@@ -1,19 +1,18 @@
 /*
- * Tema: cliente-exemplo
- * Cópia do default para estudar a estrutura. Só fontes, --primary e --radius mudam,
- * para dar para ver a troca de tema acontecendo.
+ * Tema: gamers-guild
+ * Base: cópia do default, com a primary na paleta persian-indigo.
  */
-[data-theme="cliente-exemplo"] {
-    --font-family-body: "Inter Variable", sans-serif;
-    --font-family-heading: "Space Grotesk Variable", sans-serif;
+[data-theme="gamers-guild"] {
+    --font-family-body: "Geist Variable", sans-serif;
+    --font-family-heading: "Geist Variable", sans-serif;
     --background: var(--color-white);
     --foreground: var(--color-neutral-950);
     --card: var(--color-white);
     --card-foreground: var(--color-neutral-950);
     --popover: var(--color-white);
     --popover-foreground: var(--color-neutral-950);
-    --primary: var(--color-blue-600);
-    --primary-foreground: var(--color-neutral-50);
+    --primary: var(--color-persian-indigo-700);
+    --primary-foreground: var(--color-white);
     --secondary: var(--color-neutral-100);
     --secondary-foreground: var(--color-neutral-900);
     --muted: var(--color-neutral-100);
@@ -29,7 +28,7 @@
     --chart-3: var(--color-neutral-600);
     --chart-4: var(--color-neutral-700);
     --chart-5: var(--color-neutral-800);
-    --radius: 0.125rem; /* cantos quase retos */
+    --radius: 0.625rem;
     --sidebar: var(--color-neutral-50);
     --sidebar-foreground: var(--color-neutral-950);
     --sidebar-primary: var(--color-neutral-900);
@@ -40,16 +39,16 @@
     --sidebar-ring: var(--color-neutral-400);
 }
 
-[data-theme="cliente-exemplo"] .dark,
-[data-theme="cliente-exemplo"].dark {
+[data-theme="gamers-guild"] .dark,
+[data-theme="gamers-guild"].dark {
     --background: var(--color-neutral-950);
     --foreground: var(--color-neutral-50);
     --card: var(--color-neutral-900);
     --card-foreground: var(--color-neutral-50);
     --popover: var(--color-neutral-900);
     --popover-foreground: var(--color-neutral-50);
-    --primary: var(--color-blue-400);
-    --primary-foreground: var(--color-neutral-900);
+    --primary: var(--color-persian-indigo-400);
+    --primary-foreground: var(--color-neutral-950);
     --secondary: var(--color-neutral-800);
     --secondary-foreground: var(--color-neutral-50);
     --muted: var(--color-neutral-800);

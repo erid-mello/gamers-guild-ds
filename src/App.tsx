@@ -13,11 +13,11 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 
 const steps = [50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 950]
-const palettes = ["guild", "neutral", "blue", "red"]
+const palettes = ["persian-indigo", "neutral", "red"]
 
 function App() {
   const [dark, setDark] = useState(true)
-  const [theme, setTheme] = useState<"default" | "cliente-exemplo">("default")
+  const [theme, setTheme] = useState<"default" | "gamers-guild">("default")
 
   return (
     <div data-theme={theme} className={dark ? "dark" : ""}>
@@ -32,7 +32,7 @@ function App() {
                 className="h-8 rounded-lg border border-input bg-background px-2 text-sm"
               >
                 <option value="default">Tema: default</option>
-                <option value="cliente-exemplo">Tema: cliente-exemplo</option>
+                <option value="gamers-guild">Tema: gamers-guild</option>
               </select>
               <Button variant="outline" onClick={() => setDark(!dark)}>
                 {dark ? "☀️ Light" : "🌙 Dark"}
@@ -44,7 +44,7 @@ function App() {
             <h2 className="font-heading text-lg font-semibold">Primitivos de cor</h2>
             {palettes.map((palette) => (
               <div key={palette} className="flex items-center gap-3">
-                <span className="w-16 text-sm text-muted-foreground">{palette}</span>
+                <span className="w-28 text-sm text-muted-foreground">{palette}</span>
                 <div className="flex flex-1 gap-1">
                   {steps.map((step) => (
                     <div

@@ -2,28 +2,28 @@
  * Primitivos de cor: "quais cores existem".
  *
  * Regras:
- * - Nomes de paleta, nunca de função (guild-500, não primary-500).
+ * - Nomes de paleta, nunca de função (persian-indigo-500, não primary-500).
  * - Escala de 11 degraus: 50, 100, 200 ... 900, 950 (mesmo padrão do Tailwind).
  * - Os temas (src/themes) só referenciam estes valores via var(--color-...).
  *
  * As paletas padrão do Tailwind (neutral, red, blue...) também estão disponíveis;
  * ficam em node_modules/tailwindcss/theme.css.
  *
- * Declarar dentro de @theme também gera utilities: bg-guild-500, text-guild-200 etc.
+ * Declarar dentro de @theme também gera utilities: bg-persian-indigo-500, text-persian-indigo-200 etc.
  * "static" faz o Tailwind sempre emitir as variáveis, mesmo as que nenhum
  * tema ou classe usa ainda (sem ele, cores não usadas somem do CSS final).
  */
 @theme static {
-  /* Gamers Guild: PROVISÓRIA, substituir quando a identidade for definida */
-  --color-guild-50: oklch(0.97 0.02 295);
-  --color-guild-100: oklch(0.94 0.04 295);
-  --color-guild-200: oklch(0.88 0.08 295);
-  --color-guild-300: oklch(0.81 0.13 295);
-  --color-guild-400: oklch(0.71 0.19 295);
-  --color-guild-500: oklch(0.62 0.23 295);
-  --color-guild-600: oklch(0.54 0.25 295);
-  --color-guild-700: oklch(0.47 0.23 295);
-  --color-guild-800: oklch(0.40 0.19 295);
-  --color-guild-900: oklch(0.34 0.15 295);
-  --color-guild-950: oklch(0.25 0.10 295);
+  /* Gamers Guild */
+  --color-persian-indigo-50: #f1effd;
+  --color-persian-indigo-100: #ded7f9;
+  --color-persian-indigo-200: #c0b3f5;
+  --color-persian-indigo-300: #a792f0;
+  --color-persian-indigo-400: #9072eb;
+  --color-persian-indigo-500: #7c52e5;
+  --color-persian-indigo-600: #6831d7;
+  --color-persian-indigo-700: #5125aa;
+  --color-persian-indigo-800: #3b1980;
+  --color-persian-indigo-900: #240d54;
+  --color-persian-indigo-950: #150636;
 }
