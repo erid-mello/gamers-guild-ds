@@ -1,10 +1,10 @@
 /*
  * Tema: gamers-guild
- * Base: cópia do default, com a primary na paleta persian-indigo.
+ * Base: cópia do default, com a primary na paleta persian-indigo e fonte Saira.
  */
 [data-theme="gamers-guild"] {
-    --font-family-body: "Geist Variable", sans-serif;
-    --font-family-heading: "Geist Variable", sans-serif;
+    --font-family-body: "Saira Variable", sans-serif;
+    --font-family-heading: "Saira Variable", sans-serif;
     --background: var(--color-white);
     --foreground: var(--color-neutral-950);
     --card: var(--color-white);

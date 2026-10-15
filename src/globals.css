@@ -3,8 +3,7 @@
 @import "shadcn/tailwind.css";
 /* Fontes: cada tema escolhe qual usar. O navegador só baixa as que estão em uso. */
 @import "@fontsource-variable/geist";
-@import "@fontsource-variable/inter";
-@import "@fontsource-variable/space-grotesk";
+@import "@fontsource-variable/saira";
 
 /* Primitivos: as paletas que os temas podem usar */
 @import "./styles/primitives/colors.css";
